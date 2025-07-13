@@ -29,6 +29,43 @@ button:hover {
     transform: scale(1.05);
 }
 
+.button-glow {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; /* Modern bold font */
+    font-weight: 600; /* Semi-bold */
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Specific colors and glow for each button */
+.start-btn {
+    background-color: #dc3545; /* Red */
+    box-shadow: 0 0 15px #dc3545;
+}
+
+.stop-btn {
+    background-color: #007BFF; /* Blue */
+    box-shadow: 0 0 15px #007BFF;
+}
+
+.download-btn {
+    background-color: #28a745; /* Green */
+    box-shadow: 0 0 15px #28a745;
+}
+
+.button-glow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px currentColor;
+}
+
 /* Start Simulation Button - Red */
 form[action="/run"] button {
     background-color: #dc3545;  /* Bootstrap danger red */
