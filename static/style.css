@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 50px;
+}
+
+h1 {
+    background-color: #007BFF;
+    color: white;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.5);
+    filter: blur(0.5px);
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Start Simulation Button - Red */
+form[action="/run"] button {
+    background-color: #dc3545;  /* Bootstrap danger red */
+}
+
+/* Stop Simulation Button - Blue */
+form[action="/stop"] button {
+    background-color: #007BFF;  /* Bootstrap primary blue */
+}
+
+/* Download Link Styled as a Button */
+a.download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #28a745;  /* Green */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 0 15px #28a745;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+a.download-btn:hover {
+    box-shadow: 0 0 30px #28a745;
+    transform: scale(1.05);
+}
