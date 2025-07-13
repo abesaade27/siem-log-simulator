@@ -1,0 +1,5 @@
+event_type: ssh
+rate_per_minute: 10
+total_events: 50
+output_file: logs/ssh_simulation.log
+success_rate: 0.7  
