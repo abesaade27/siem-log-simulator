@@ -6,6 +6,17 @@ from generators.utils import wait_interval
 def load_config(path='config.yaml'):
     with open(path, 'r') as file:
         return yaml.safe_load(file)
+    
+def load_config(path='config.yaml'):
+    try:
+        with open(path, 'r') as file:
+            config = yaml.safe_load(file)
+            print("Loaded Config:", config)
+            return config
+    except Exception as e:
+        print(f"Failed to load config: {e}")
+        return None
+
 
 def simulate_ssh_logs(config):
     total = config.get('total_events', 50)
