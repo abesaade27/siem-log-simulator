@@ -50,15 +50,22 @@ siem-log-simulator/
 ```bash
 git clone https://github.com/<your-username>/siem-log-simulator.git
 cd siem-log-simulator
+```
 
 2. **Install Dependencies**
+```bash
 pip install Flask PyYAML
+```
 
 3. **Run the Flask Web App**
+```bash
 python app.py
+```
 
 4. **Access the Web Interface**
+```bash
 http://127.0.0.1:5000 
+```
 
 ---
 
