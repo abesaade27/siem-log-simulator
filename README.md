@@ -26,23 +26,23 @@ A Python-based SIEM log simulator that generates synthetic SSH logs, wrapped in 
 ## 📁 Project Structure
 
 siem-log-simulator/
-│
-├── simulator.py # Simulation core logic
-├── app.py # Flask application (Web UI)
-├── config.yaml # Simulation configuration
-├── logs/ # Output directory for generated logs
-│
-├── templates/
-│ └── index.html # Web GUI frontend
-│
-├── static/
-│ └── style.css # CSS for GUI styling
-│
-├── generators/
-│ ├── ssh_generator.py # SSH log generator
-│ └── utils.py # Utility functions (wait interval)
-│
-└── README.md # Project documentation
+-│
+-├── simulator.py # Simulation core logic
+-├── app.py # Flask application (Web UI)
+-├── config.yaml # Simulation configuration
+-├── logs/ # Output directory for generated logs
+-│
+-├── templates/
+-│ └── index.html # Web GUI frontend
+-│
+-├── static/
+-│ └── style.css # CSS for GUI styling
+-│
+-├── generators/
+-│ ├── ssh_generator.py # SSH log generator
+-│ └── utils.py # Utility functions (wait interval)
+-│
+-└── README.md # Project documentation
 
 ## ⚙️ Setup Instructions
 
